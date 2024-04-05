@@ -28,4 +28,14 @@ def dynamicProgramming(n):
         return dynamicProgramming(n - 1) + dynamicProgramming(n - 2)
 
 
+def n_queen(n):
+    """
+    A function that solves the n-queens problem using backtracking.
 
+    Parameters:
+    n (int): The size of the chessboard.
+
+    Returns:
+    list: A list of lists representing the solutions to the n-queens problem.
+    """
+    board = [[0] * n for _ in range(n)]
